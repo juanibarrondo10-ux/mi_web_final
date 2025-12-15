@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería "El Lápiz de Oro" - Todo para tu Imaginación</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="./img1.jfif" alt="Logo de la Librería" width="150">
+        <h1>Librería "El Lápiz de Oro"</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrito-info" style="padding: 20px; border-bottom: 1px solid #ccc;">
+    
+            <h2 style="text-align: center;">Carrito de Compras 
+                (<span id="contador-carrito">0</span> productos)
+             </h2>
+    
+        <button id="vaciar-carrito" class="btn-principal" style="max-width: 250px; margin: 10px auto; display: block;">
+            Vaciar Carrito
+        </button>
+    
+        <ul id="lista-carrito-productos" style="list-style: none; max-width: 600px; margin: 20px auto; padding: 0; text-align: left;">
+        </ul> 
+    
+    </section>
+
+    <main>
+
+        <section id="productos">
+            <h2>Nuestros Productos Destacados</h2>
+            <div class="productos__contenedor" id="productos-container">
+            </div>
+        </section>
+
+            <div id="mensaje-cargando" style="text-align: center; margin-top: 15px;">
+                Cargando productos, por favor espere...
+            </div>
+
+        <section id="novedades">
+            <h2>Librería Online</h2>
+    
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/gW9Xm0Xy4q0"
+                title="Tutorial Básico de Dibujo a Lápiz" 
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+    
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="form-contacto" action="" method="POST">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="btn-principal">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Librería "El Lápiz de Oro". Todos los derechos reservados.</p>
+    </footer>
+
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
